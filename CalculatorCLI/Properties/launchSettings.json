@@ -2,7 +2,7 @@
   "profiles": {
     "CalculatorCLI": {
       "commandName": "Project",
-      "commandLineArgs": "/add 17 8"
+      "commandLineArgs": "/mult 17 8"
     }
   }
 }

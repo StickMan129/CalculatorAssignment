@@ -18,8 +18,6 @@ namespace CalculatorCLI
             try { num1 = int.Parse(args[1]); } catch { }
             try { num2 = int.Parse(args[2]); } catch { }
 
-            Console.WriteLine("/?");
-
                 switch (args[0])
                 {
                     case "/add":
