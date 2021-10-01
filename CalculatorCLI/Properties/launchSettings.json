@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CalculatorCLI": {
+      "commandName": "Project",
+      "commandLineArgs": "Welcome"
+    }
+  }
+}
