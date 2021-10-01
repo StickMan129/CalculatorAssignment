@@ -24,9 +24,9 @@ namespace CalculatorGUI
         }
         private void allEquations_Click(object sender, EventArgs e)
         {
-            int n;
-            n = Convert.ToInt16(((Button)sender).Text);
-            txtInput.Text += n.ToString();
+            string m;
+            m = ((Button)sender).Text;
+            txtInput.Text += m;
         }
 
         private void btnCalculate_Click(object sender, EventArgs e)
