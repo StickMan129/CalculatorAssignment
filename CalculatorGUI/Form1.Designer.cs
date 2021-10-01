@@ -67,7 +67,7 @@ namespace CalculatorGUI
             this.btn1.TabIndex = 1;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = true;
-            this.btn1.Click += new System.EventHandler(this.btn1_Click);
+            this.btn1.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // btn2
             // 
@@ -77,7 +77,7 @@ namespace CalculatorGUI
             this.btn2.TabIndex = 1;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = true;
-            this.btn2.Click += new System.EventHandler(this.btn2_Click);
+            this.btn2.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // btn3
             // 
@@ -87,7 +87,7 @@ namespace CalculatorGUI
             this.btn3.TabIndex = 1;
             this.btn3.Text = "3";
             this.btn3.UseVisualStyleBackColor = true;
-            this.btn3.Click += new System.EventHandler(this.btn3_Click);
+            this.btn3.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // btn4
             // 
@@ -97,7 +97,7 @@ namespace CalculatorGUI
             this.btn4.TabIndex = 1;
             this.btn4.Text = "4";
             this.btn4.UseVisualStyleBackColor = true;
-            this.btn4.Click += new System.EventHandler(this.btn4_Click);
+            this.btn4.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // btn5
             // 
@@ -107,7 +107,7 @@ namespace CalculatorGUI
             this.btn5.TabIndex = 1;
             this.btn5.Text = "5";
             this.btn5.UseVisualStyleBackColor = true;
-            this.btn5.Click += new System.EventHandler(this.btn5_Click);
+            this.btn5.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // btn6
             // 
@@ -117,7 +117,7 @@ namespace CalculatorGUI
             this.btn6.TabIndex = 1;
             this.btn6.Text = "6";
             this.btn6.UseVisualStyleBackColor = true;
-            this.btn6.Click += new System.EventHandler(this.btn6_Click);
+            this.btn6.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // btn7
             // 
@@ -127,7 +127,7 @@ namespace CalculatorGUI
             this.btn7.TabIndex = 1;
             this.btn7.Text = "7";
             this.btn7.UseVisualStyleBackColor = true;
-            this.btn7.Click += new System.EventHandler(this.btn7_Click);
+            this.btn7.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // btn8
             // 
@@ -137,7 +137,7 @@ namespace CalculatorGUI
             this.btn8.TabIndex = 1;
             this.btn8.Text = "8";
             this.btn8.UseVisualStyleBackColor = true;
-            this.btn8.Click += new System.EventHandler(this.btn8_Click);
+            this.btn8.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // btn9
             // 
@@ -147,7 +147,7 @@ namespace CalculatorGUI
             this.btn9.TabIndex = 1;
             this.btn9.Text = "9";
             this.btn9.UseVisualStyleBackColor = true;
-            this.btn9.Click += new System.EventHandler(this.btn9_Click);
+            this.btn9.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // btn0
             // 
@@ -157,7 +157,7 @@ namespace CalculatorGUI
             this.btn0.TabIndex = 1;
             this.btn0.Text = "0";
             this.btn0.UseVisualStyleBackColor = true;
-            this.btn0.Click += new System.EventHandler(this.btn0_Click);
+            this.btn0.Click += new System.EventHandler(this.allButtons_Click);
             // 
             // btnAdd
             // 
@@ -168,7 +168,7 @@ namespace CalculatorGUI
             this.btnAdd.TabIndex = 1;
             this.btnAdd.Text = "+";
             this.btnAdd.UseVisualStyleBackColor = true;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            this.btnAdd.Click += new System.EventHandler(this.allEquations_Click);
             // 
             // btnSubtract
             // 
@@ -179,28 +179,29 @@ namespace CalculatorGUI
             this.btnSubtract.TabIndex = 1;
             this.btnSubtract.Text = "-";
             this.btnSubtract.UseVisualStyleBackColor = true;
-            this.btnSubtract.Click += new System.EventHandler(this.btnSubtract_Click);
+            this.btnSubtract.Click += new System.EventHandler(this.allEquations_Click);
             // 
             // btnMultiply
             // 
+            this.btnMultiply.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMultiply.Location = new System.Drawing.Point(12, 314);
             this.btnMultiply.Name = "btnMultiply";
             this.btnMultiply.Size = new System.Drawing.Size(72, 57);
             this.btnMultiply.TabIndex = 1;
-            this.btnMultiply.Text = "X";
+            this.btnMultiply.Text = "*";
             this.btnMultiply.UseVisualStyleBackColor = true;
-            this.btnMultiply.Click += new System.EventHandler(this.btnMultiply_Click);
+            this.btnMultiply.Click += new System.EventHandler(this.allEquations_Click);
             // 
             // btnDivide
             // 
-            this.btnDivide.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnDivide.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnDivide.Location = new System.Drawing.Point(90, 314);
             this.btnDivide.Name = "btnDivide";
             this.btnDivide.Size = new System.Drawing.Size(72, 57);
             this.btnDivide.TabIndex = 1;
-            this.btnDivide.Text = "÷";
+            this.btnDivide.Text = "/";
             this.btnDivide.UseVisualStyleBackColor = true;
-            this.btnDivide.Click += new System.EventHandler(this.btnDivide_Click);
+            this.btnDivide.Click += new System.EventHandler(this.allEquations_Click);
             // 
             // btnDex2Hex
             // 
