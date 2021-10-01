@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CalcLibrary;
 
 namespace CalculatorGUI
 {
@@ -14,8 +15,10 @@ namespace CalculatorGUI
     {
         public Form1()
         {
-            InitializeComponent();
+            InitializeComponent();            
         }
+        CalculatorFunctions calc = new CalculatorFunctions();
+        
         private void allButtons_Click(object sender, EventArgs e)
         {
             int n;
@@ -31,22 +34,57 @@ namespace CalculatorGUI
 
         private void btnCalculate_Click(object sender, EventArgs e)
         {
+            string input = txtInput.Text;
 
+            if (input.Contains("+"))
+            {
+
+            }
+                
+            else if (input.Contains("-"))
+            {
+
+            }
+                
+            else if (input.Contains("*"))
+            {
+
+            }
+                
+            else if (input.Contains("/"))
+            {
+
+            }
+                
         }
 
         private void btnDex2Hex_Click(object sender, EventArgs e)
         {
             string input = txtInput.Text;
-
+            
+            
             if (input.Contains("+"))
-                MessageBox.Show("Please remove +");
-            else if (input.Contains("-"))
-                MessageBox.Show("Please remove -");
-            else if (input.Contains("X"))
-                MessageBox.Show("Please remove X");
-            else if (input.Contains("÷"))
-                MessageBox.Show("Please remove ÷");
+            {
+                MessageBox.Show("No +");
+                txtInput.Clear();
+            }
+           else if (input.Contains("-"))
+            {
+                MessageBox.Show("No -");
+                txtInput.Clear();
+            }
+            else if (input.Contains("*"))
+            {
+                MessageBox.Show("No *");
+                txtInput.Clear();
+            }
+            else if (input.Contains("/"))
+            {
+                MessageBox.Show("No /");
+                txtInput.Clear();
+            }
 
+            if(txtInput.Text != "")
             txtInput.Text = int.Parse(input).ToString("X");  //The X represents the hexadecimal conversion
         }
 
@@ -55,15 +93,29 @@ namespace CalculatorGUI
             string input = txtInput.Text;
 
             if (input.Contains("+"))
-                MessageBox.Show("Please remove +");
+            {
+                MessageBox.Show("No +");
+                txtInput.Clear();
+            }
             else if (input.Contains("-"))
-                MessageBox.Show("Please remove -");
-            else if (input.Contains("X"))
-                MessageBox.Show("Please remove X");
-            else if (input.Contains("÷"))
-                MessageBox.Show("Please remove ÷");
+            {
+                MessageBox.Show("No -");
+                txtInput.Clear();
+            }
+            else if (input.Contains("*"))
+            {
+                MessageBox.Show("No *");
+                txtInput.Clear();
+            }
+            else if (input.Contains("/"))
+            {
+                MessageBox.Show("No /");
+                txtInput.Clear();
+            }
 
-            txtInput.Text = Convert.ToInt32(input, 16).ToString();   //The 16 represents the hexadecimal (UTF-16)
+
+                if (txtInput.Text != "")
+                txtInput.Text = Convert.ToInt32(input, 16).ToString();   //The 16 represents the hexadecimal (UTF-16)
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
