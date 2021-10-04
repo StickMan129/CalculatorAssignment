@@ -16,14 +16,12 @@ namespace CalculatorGUI
         {
             InitializeComponent();
         }
-        private void btn1_Click(object sender, EventArgs e)
-        {
-            txtInput.Text = txtInput.Text + "1";
-        }
 
-        private void btn2_Click(object sender, EventArgs e)
+        public void allButtons_Click(object sender, EventArgs e)
         {
-            txtInput.Text = txtInput.Text + "2";
+            int n;
+            n = Convert.ToInt16(((Button)sender).Text);
+            txtInput.Text += n.ToString();
         }
 
         private void btn3_Click(object sender, EventArgs e)

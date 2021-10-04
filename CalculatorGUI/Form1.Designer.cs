@@ -67,7 +67,6 @@ namespace CalculatorGUI
             this.btn1.TabIndex = 1;
             this.btn1.Text = "1";
             this.btn1.UseVisualStyleBackColor = true;
-            this.btn1.Click += new System.EventHandler(this.btn1_Click);
             // 
             // btn2
             // 
@@ -77,7 +76,6 @@ namespace CalculatorGUI
             this.btn2.TabIndex = 1;
             this.btn2.Text = "2";
             this.btn2.UseVisualStyleBackColor = true;
-            this.btn2.Click += new System.EventHandler(this.btn2_Click);
             // 
             // btn3
             // 
@@ -225,9 +223,9 @@ namespace CalculatorGUI
             // btnCalculate
             // 
             this.btnCalculate.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCalculate.Location = new System.Drawing.Point(90, 391);
+            this.btnCalculate.Location = new System.Drawing.Point(13, 391);
             this.btnCalculate.Name = "btnCalculate";
-            this.btnCalculate.Size = new System.Drawing.Size(72, 57);
+            this.btnCalculate.Size = new System.Drawing.Size(149, 57);
             this.btnCalculate.TabIndex = 1;
             this.btnCalculate.Text = "=";
             this.btnCalculate.UseVisualStyleBackColor = true;
@@ -238,7 +236,7 @@ namespace CalculatorGUI
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnDelete.Location = new System.Drawing.Point(168, 391);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(72, 57);
+            this.btnDelete.Size = new System.Drawing.Size(149, 57);
             this.btnDelete.TabIndex = 1;
             this.btnDelete.Text = "Clear";
             this.btnDelete.UseVisualStyleBackColor = true;
